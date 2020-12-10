@@ -1,0 +1,22 @@
+
+var helicopter;
+var package;
+package.restitution=1
+function setup(){
+    createCanvas(400,200);
+    helicopter=createSprite(390,190);
+    package=createSprite(350,150);
+}
+function preload(){
+    helicopter=helicopter.loadImage("helicopter.png");
+    package=package.loadImage("package.png");
+}
+function draw(){
+    background("black");
+    helicopter=helicopter.addImage("helicopter.png");
+    package=package.addImage("package.png");
+    if(keyWentDown("DownArrow")){
+        package.velocityY=-2
+    }
+    drawSprites();
+}

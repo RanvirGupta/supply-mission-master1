@@ -1,22 +1,17 @@
+<!DOCTYPE html>
+  <html lang="">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Supply Mission</title>
+      <style> body {padding: 0; margin: 0;} </style>
+      <script src="matter.js"></script>
+      <script src="p5.js"></script>
+      <script src="p5.play.js"></script>
 
-var helicopter;
-var package;
-package.restitution=1
-function setup(){
-    createCanvas(400,200);
-    helicopter=createSprite(390,190);
-    package=createSprite(350,150);
-}
-function preload(){
-    helicopter=helicopter.loadImage("helicopter.png");
-    package=package.loadImage("package.png");
-}
-function draw(){
-    background("black");
-    helicopter=helicopter.addImage("helicopter.png");
-    package=package.addImage("package.png");
-    if(keyWentDown("DownArrow")){
-        package.velocityY=-2
-    }
-    drawSprites();
-}
+      <script src="sketch.js"></script>
+
+    </head>
+    <body>
+    </body>
+  </html>
